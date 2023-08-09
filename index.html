@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phones</title>
+    
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./Styles.css">
+
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Phones</h1>
+        <div class="filter_button">
+            <button class="filter active" data-name="all" onclick="filterItem(event)">All</button>
+            <button class="filter" data-name="iPhone" onclick="filterItem(event)">iPhone</button>
+            <button class="filter" data-name="iQOO" onclick="filterItem(event)">iQOO</button>
+            <button class="filter" data-name="Oneplus" onclick="filterItem(event)">Oneplus</button>
+            <button class="filter" data-name="Oppo" onclick="filterItem(event)">Oppo</button>
+            <button class="filter" data-name="Realme" onclick="filterItem(event)">Realme</button>
+            <button class="filter" data-name="Redmi" onclick="filterItem(event)">Redmi</button>
+            <button class="filter" data-name="Samsung" onclick="filterItem(event)">Samsung</button>
+            <button class="filter" data-name="Vivo" onclick="filterItem(event)">Vivo</button>
+        </div>
+
+        <!-- Phone Images -->
+
+        <div class="filterable_images">
+
+            <div class="card" data-name="iPhone">
+                <img src="./Images/iPhone 14 Pro Max - Purple.png" alt="iPhone 14 Pro Max - Purple" onclick="openPreview(event)">
+                <div class="card_body">
+                    <h3 class="card-title">iPhone 14 Pro Max</h3>
+                </div>
+            </div>
+
+            <div class="card" data-name="iPhone">
+                <img src="./Images/iPhone 14 Pro - Gold.png" alt="iPhone 14 Pro - Gold" onclick="openPreview(event)">
+                <div class="card_body">
+                    <h3 class="card-title">iPhone 14 Pro</h3>
+                </div>
+            </div>
+
+            <div class="card" data-name="iQOO">
+                <img src="./Images/iQOO 9 Pro 5G - Dark Cruise.png" alt="iQOO 9 Pro - Dark Cruise" onclick="openPreview(event)">
+                <div class="card_body">
+                    <h3 class="card-title">iQOO 9 Pro</h3>
+                </div>
+            </div>
+
+            <div class="card" data-name="iQOO">
+                <img src="./Images/iQOO Neo 6 5G - Dark Nova.png" alt="iQOO Neo 6 5G - Dark Nova" onclick="openPreview(event)">
+                <div class="card_body">
+                    <h3 class="card-title">iQOO Neo 6 5G</h3>
+                </div>
+            </div>
+
+            <div class="card" data-name="Oneplus">
+                <img src="./Images/Oneplus 11R 5G - Galatic Silver.png" alt="Oneplus 11R 5G - Galatic Silver" onclick="openPreview(event)">
+                <div class="card_body">
+                    <h3 class="card-title">Oneplus 11R 5G</h3>
+                </div>
+            </div>
+
+            <div class="card" data-name="Oneplus">
+                <img src="./Images/Oneplus 10 Pro 5G - Emerald Forest.png" alt="Oneplus 10 Pro 5G - Emerald Forest" onclick="openPreview(event)">
+                <div class="card_body">
+                    <h3 class="card-title">Oneplus 10 Pro 5G</h3>
+                </div>
+            </div>
+
+            <div class="card" data-name="Oppo">
+                <img src="./Images/Oppo F23 5G - Bold Gold.png" alt="Oppo F23 5G - Gold" onclick="openPreview(event)">
+                <div class="card_body">
+                    <h3 class="card-title">Oppo F23 5G</h3>
+                </div>
+            </div>
+
+            <div class="card" data-name="Oppo">
+                <img src="./Images/Oppo F21s Pro 5G - Starlight Black.png" alt="Oppo F21s Pro 5G - Starlight Black" onclick="openPreview(event)">
+                <div class="card_body">
+                    <h3 class="card-title">Oppo F21s Pro 5G</h3>
+                </div>
+            </div>
+
+            <div class="card" data-name="Realme">
+                <img src="./Images/Realme 11 Pro+ 5G - Oasis Green.png" alt="Realme 11 Pro+ 5G - Oasis Green" onclick="openPreview(event)">
+                <div class="card_body">
+                    <h3 class="card-title">Realme 11 Pro+ 5G</h3>
+                </div>
+            </div>
+
+            <div class="card" data-name="Realme">
+                <img src="./Images/Realme Nazro 60 Pro 5G - Mars Orange.png" alt="Realme Nazro 60 Pro 5G - Mars Orange" onclick="openPreview(event)">
+                <div class="card_body">
+                    <h3 class="card-title">Realme Nazro 60 Pro 5G</h3>
+                </div>
+            </div>
+
+            <div class="card" data-name="Redmi">
+                <img src="./Images/Redmi 12 Pro 5G - Noir Black.png" alt="Redmi 12 Pro 5G - Noir Black" onclick="openPreview(event)">
+                <div class="card_body">
+                    <h3 class="card-title">Redmi 12 Pro 5G</h3>
+                </div>
+            </div>
+
+            <div class="card" data-name="Redmi">
+                <img src="./Images/Redmi Note 11 T 5G - Stardust White.png" alt="Redmi Note 11T 5G - Stradust White" onclick="openPreview(event)">
+                <div class="card_body">
+                    <h3 class="card-title">Redmi Note 11T 5G</h3>
+                </div>
+            </div>
+
+            <div class="card" data-name="Samsung">
+                <img src="./Images/Samsung Glaxy S23 Ultra 5G - Green.png" alt="Samsung Galaxy S23 Ultra 5G - Green" onclick="openPreview(event)">
+                <div class="card_body">
+                    <h3 class="card-title">Samsung Galaxy S23 Ultra 5G</h3>
+                </div>
+            </div>
+
+            <div class="card" data-name="Samsung">
+                <img src="./Images/Samsung Galaxy Z Fold4 5G - Phantom Black.png" alt="Samsung Galaxy Z Fold4 5G - Phantom Black" onclick="openPreview(event)">
+                <div class="card_body">
+                    <h3 class="card-title">Samsung Galaxy Z Fold 4 5G</h3>
+                </div>
+            </div>
+
+            <div class="card" data-name="Vivo">
+                <img src="./Images/Vivo T2x 5G - Aurora Gold.png" alt="Vivo T2x 5G - Aurora Gold" onclick="openPreview(event)">
+                <div class="card_body">
+                    <h3 class="card-title">Vivo T2x 5G</h3>
+                </div>
+            </div>
+
+            <div class="card" data-name="Vivo">
+                <img src="./Images/vivo V23 pro 5G - sunshine gold.jpg" alt="Vivo V23 Pro 5G - Sunshine Gold" onclick="openPreview(event)">
+                <div class="card_body">
+                    <h3 class="card-title">Vivo V23 Pro 5G</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Full Screen Preview Box Image -->
+
+    <div class="preview-image">
+        <div class="detail-box">
+            <span class="title">Image Category : <p>Not defined</p></span>
+            <i class="bx bx-x" id="close-cart" onclick="closePreview()"></i>
+        </div>
+        <div class="image-box">
+            <img src="" alt="">
+        </div>
+    </div>
+
+    <div class="shadow"></div>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
